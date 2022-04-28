@@ -1,0 +1,14 @@
+s = input()
+x, y, n = 0, 0, 0
+while x < len(s):
+    if s[x].isdigit():
+        if x == len(s) - 1:
+            n += 1 
+        x += 1
+    else: 
+        if x > y:
+            n += 1
+        x += 1
+        y = x
+
+print(n)
